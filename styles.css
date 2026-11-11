@@ -1706,3 +1706,12 @@ body.scroll-locked { overflow-y: hidden; }
   padding: 2px 6px;
   margin-left: 4px;
 }
+
+/* The toast sits bottom-right at z-140, the same corner as the slideshow's
+   progress bar + counter. While runway mode is open, lift the toast above the
+   footbar so it never covers the scrubber. */
+#slideshow-overlay[style*="flex"] ~ .toast-banner,
+body:has(#slideshow-overlay[style*="flex"]) .toast-banner {
+  bottom: 96px;
+  z-index: 130;
+}
