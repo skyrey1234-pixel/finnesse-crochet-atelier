@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FINNESSE® × FARAH — Complete Crochet Atelier & Lookbook Storefront | THE FINNESSE GROUP LLC</title>
+  <meta name="robots" content="index, follow" />
+  <meta name="description" content="FINNESSE by THE FINNESSE GROUP LLC — a hand-crocheted luxury archive: cat-ear headwear, swim, full apparel co-ords and made-to-order Atelier Couture. Jacksonville, FL (904)." />
+  <meta property="og:title" content="FINNESSE® × FARAH — Crochet Atelier" />
+  <meta property="og:description" content="199 hand-charted designs. Six chapters. Made-to-order couture." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="./reel-poster.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="theme-color" content="#080b0a" />
+  <link rel="stylesheet" href="./styles.css?v=bb0a0210eb" />
+</head>
+<body>
+  <div class="announcement-bar">
+    <div class="live-pill">
+      <span class="pulse-dot"></span>
+      <span>THE FINNESSE GROUP LLC · COMPLETE CROCHET ATELIER &amp; SHOWROOM</span>
+    </div>
+    <div id="announce-counts">PRICED DESIGNS · ARCHIVE PHOTOS · WHOLESALE 5+ TIER AUTOMATICALLY UNLOCKED</div>
+    <div>30.3322° N / 81.6557° W · DUVAL 904</div>
+  </div>
+
+  <header class="site-header">
+    <a href="#top" class="brand-lockup">
+      <span class="brand-word">FINNESSE<span class="reg">®</span></span>
+      <span class="brand-sub">CROCHET ATELIER · FARAH × SKY · 904</span>
+    </a>
+
+    <nav class="main-nav" aria-label="Primary Navigation">
+      <a href="#atelier-showcase-section">Flagship Lookbook</a>
+      <a href="#film-section">▶ The Reel</a>
+      <a href="#story-section">The Origin Story</a>
+      <button type="button" data-quick-cat="All">All Pieces</button>
+      <button type="button" data-quick-cat="Atelier Couture" class="nav-couture">Atelier Couture</button>
+      <button type="button" data-quick-cat="Apparel Sets">New Apparel</button>
+      <button type="button" data-quick-cat="Hats">Hats</button>
+      <button type="button" data-quick-cat="Swim">Swim</button>
+      <a href="#campaigns-section">Campaigns</a>
+    </nav>
+
+    <div class="header-actions">
+      <button type="button" class="btn-pill btn-outline" id="open-pricing-matrix-btn">
+        Pricing Matrix &amp; CSV
+      </button>
+      <button type="button" class="bag-trigger" id="open-bag-btn" aria-label="Open Bag">
+        <span>FINNESSE BAG</span>
+        <span class="bag-badge" id="header-bag-count">0</span>
+      </button>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero-3d-section" id="atelier-showcase-section">
+      <div class="hero-copy-col">
+        <div class="eyebrow-tag">
+          <span class="pulse-dot"></span>
+          <span>FROM FARAH’S FIRST STITCH TO A 130-PIECE DYNASTY</span>
+        </div>
+
+        <h1 class="hero-headline">
+          CROCHET NOIR.<br />
+          <span class="accent-teal">904 ENERGY.</span>
+          <span class="accent-gold">PURE FINNESSE.</span>
+        </h1>
+
+        <p class="hero-lead">
+          What began with a single hand-crocheted dusty-rose ribbed beanie whose square corners naturally rose into cat ears is now a full luxury house by <strong>THE FINNESSE GROUP LLC</strong> — headwear, swim, full apparel co-ords, and a made-to-order <strong>Atelier Couture</strong> tier. Explore every stitch, flip between studio flat-lays and on-model lookbook shots, and build your rotation.
+        </p>
+
+        <div class="hero-stat-grid">
+          <div class="stat-card">
+            <strong id="stat-skus">—</strong>
+            <span>Priced SKUs</span>
+          </div>
+          <div class="stat-card">
+            <strong id="stat-images">—</strong>
+            <span>Archive Visuals</span>
+          </div>
+          <div class="stat-card">
+            <strong id="stat-range">—</strong>
+            <span>Retail Range</span>
+          </div>
+          <div class="stat-card">
+            <strong id="stat-chapters">—</strong>
+            <span>Story Chapters</span>
+          </div>
+        </div>
+
+        <div class="hero-cta-row">
+          <a href="#catalog-section" class="btn-pill btn-gold">
+            Explore The Full Priced Archive ↓
+          </a>
+          <a href="#story-section" class="btn-pill btn-teal">
+            Read The 6-Chapter Story
+          </a>
+          <a href="./finnesse-pricing-sheet.csv" download class="btn-pill btn-outline">
+            Download Full Pricing CSV ⤓
+          </a>
+        </div>
+      </div>
+
+      <!-- Flagship Interactive Lookbook Showcase (Real Photography) -->
+      <div class="atelier-3d-stage-card" id="hero-showcase-card">
+        <div class="stage-top-bar">
+          <div class="stage-title-group">
+            <span class="pulse-dot"></span>
+            <span id="showcase-collection-pill">FLAGSHIP SHOWCASE · DUVAL TEAL 904</span>
+          </div>
+          <div class="stage-mode-pills" id="hero-angle-pills"></div>
+        </div>
+
+        <div class="hero-lookbook-stage" id="hero-lookbook-stage">
+          <div class="hero-lookbook-split" id="hero-lookbook-split" style="display:grid;grid-template-columns:1.15fr 0.85fr;gap:18px;padding:20px;align-items:center;min-height:430px;">
+            <div class="hero-main-photo-frame" id="hero-main-photo-frame" style="position:relative;border-radius:18px;overflow:hidden;border:1px solid var(--line-strong);background:#0a0e0d;aspect-ratio:4/4.5;cursor:pointer;box-shadow:0 20px 50px rgba(0,0,0,0.6);">
+              <img id="hero-active-img" src="assets/f2a3cde6f85e84dc.webp" alt="Featured FINNESSE Piece" style="width:100%;height:100%;object-fit:cover;transition:transform 0.4s ease;" />
+              <div style="position:absolute;top:12px;left:12px;display:flex;gap:8px;">
+                <span class="badge-tag gold" id="hero-badge-tag">904 Flagship</span>
+                <span class="sku-tag" id="hero-sku-tag">FNS-HAT-05</span>
+              </div>
+              <div id="hero-secondary-thumbs" style="position:absolute;bottom:12px;left:12px;display:flex;gap:8px;z-index:4;"></div>
+            </div>
+
+            <div style="display:flex;flex-direction:column;gap:14px;padding:6px 4px;">
+              <div class="eyebrow-tag" id="hero-chapter-label" style="font-size:10px;">CHAPTER III · 904 IN THE BLOOD</div>
+              <h2 id="hero-product-title" style="font-family:var(--display);font-size:38px;font-weight:900;line-height:0.95;text-transform:uppercase;">
+                Duval Jaguar Signature Cat-Ear Beanie
+              </h2>
+              <div style="display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;">
+                <strong id="hero-product-price" style="font-family:var(--mono);font-size:26px;color:var(--gold);">$58 USD</strong>
+                <span id="hero-product-wholesale" class="badge-tag">5+ Wholesale: $30</span>
+              </div>
+              <p id="hero-product-desc" style="font-size:13.5px;color:#d0d7d2;line-height:1.55;">
+                The unmistakable crown jewel of Jacksonville energy. Hand-charted teal, black, and gold jaguar rosettes topped with gold-lined ears and a fierce woven jaguar-head emblem.
+              </p>
+              <div style="background:rgba(255,255,255,0.03);border:1px solid var(--line);border-radius:12px;padding:10px 12px;font-size:12px;">
+                <span style="font-family:var(--mono);font-size:9px;color:var(--teal);text-transform:uppercase;display:block;">Stitch &amp; Construction</span>
+                <span id="hero-product-stitch" style="color:var(--muted);">Jacquard crochet rosette spots · Gold-lined ears · Woven fierce jaguar-head front patch</span>
+              </div>
+              <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:4px;">
+                <button type="button" class="btn-pill btn-gold" id="hero-add-bag-btn" style="flex:1;justify-content:center;padding:12px 16px;">
+                  + Add to FINNESSE Bag
+                </button>
+                <button type="button" class="btn-pill btn-outline" id="hero-inspect-btn" style="padding:12px 16px;">
+                  Full Specs ↗
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="stage-controls-deck">
+          <div style="display:flex;justify-content:space-between;align-items:center;font-family:var(--mono);font-size:10px;color:var(--muted);">
+            <span>SELECT FLAGSHIP PIECE TO PREVIEW IN THE SHOWCASE</span>
+            <span>CLICK ANY THUMBNAIL FOR MULTI-ANGLE / ON-MODEL VIEWS</span>
+          </div>
+          <div class="swatch-preset-strip" id="swatch-preset-strip" aria-label="Featured Pieces"></div>
+        </div>
+      </div>
+    </section>
+
+    <div class="marquee-strip" aria-hidden="true">
+      <div class="marquee-track">
+        <span>FINNESSE® BY THE FINNESSE GROUP LLC ✦ FARAH × SKY CROCHET ATELIER ✦ 130 PRICED PIECES ✦ DUVAL 904 JAGUAR CAPSULE ✦ THE WAY FAITH SERIES ✦ SKY &amp; CYBER LAB ✦ RUNWAY COUTURE ✦&nbsp;</span>
+        <span>FINNESSE® BY THE FINNESSE GROUP LLC ✦ FARAH × SKY CROCHET ATELIER ✦ 130 PRICED PIECES ✦ DUVAL 904 JAGUAR CAPSULE ✦ THE WAY FAITH SERIES ✦ SKY &amp; CYBER LAB ✦ RUNWAY COUTURE ✦&nbsp;</span>
+      </div>
+    </div>
+
+    <section class="section-container" id="film-section">
+      <div class="section-header-row">
+        <div>
+          <div class="eyebrow-tag">
+            <span class="pulse-dot"></span>
+            <span>THE BRAND FILM · 1080×1920 VERTICAL</span>
+          </div>
+          <h2 class="section-title">THE RUNWAY REEL.<br /><span>PRESS PLAY.</span></h2>
+        </div>
+        <p style="max-width:440px;color:var(--muted);">
+          A vertical brand film cut from the real archive photography — six chapters, hero garments, prices burned in. Built for Instagram Reels, TikTok and Shorts.
+        </p>
+      </div>
+
+      <div class="film-stage">
+        <div class="film-player-wrap">
+          <video id="brand-reel" class="brand-reel" controls playsinline preload="metadata"
+                 poster="./reel-poster.jpg">
+            <source src="./finnesse-runway-reel.mp4" type="video/mp4" />
+            Your browser cannot play this video. <a href="./finnesse-runway-reel.mp4">Download it here.</a>
+          </video>
+        </div>
+        <div class="film-side">
+          <h4>What's in the cut</h4>
+          <ul class="film-beats">
+            <li><span>I</span> The First Stitch — where the cat ear was born</li>
+            <li><span>III</span> Duval Dynasty — teal, obsidian &amp; bullion gold</li>
+            <li><span>V</span> The Apparel Expansion — hoodies, flares, co-ords</li>
+            <li><span>VI</span> Atelier Couture — made to order, $800–$980</li>
+          </ul>
+          <div class="film-actions">
+            <a href="./finnesse-runway-reel.mp4" download class="btn-pill btn-gold">Download Reel ⤓</a>
+            <button type="button" class="btn-pill btn-outline" id="film-fullscreen-btn">Fullscreen ⛶</button>
+          </div>
+          <p class="film-note">Vertical 9:16 · H.264 · faststart enabled for progressive playback.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-container" id="story-section">
+      <div class="section-header-row">
+        <div>
+          <div class="eyebrow-tag">THE ARCHIVE NARRATIVE · SIX CHAPTERS</div>
+          <h2 class="section-title">FROM ONE HANDMADE HAT<br /><span>TO AN ENTIRE WORLD.</span></h2>
+        </div>
+        <p style="max-width:460px;color:var(--muted);">
+          Every folder in this archive tells a chapter of the journey—from Farah’s original dusty-rose prototype selfie through 20 signature headwear icons and 38 runway ensembles, to the newest full-apparel drop and the made-to-order Atelier Couture tier. Click any chapter to filter the catalog.
+        </p>
+      </div>
+
+      <div class="chapters-grid">
+        <article class="chapter-card">
+          <span class="chapter-num">CHAPTER 01 · THE ORIGIN</span>
+          <h3>Farah’s First Stitch &amp; Cherry Drop</h3>
+          <p>
+            It started with a chunky, ribbed dusty-coral crochet beanie handmade by Farah. Because of the flat top-seam construction, the two corners naturally rose into playful cat ears—giving birth to the signature FINNESSE silhouette and the original Cherry Crush look.
+          </p>
+          <button type="button" class="btn-pill btn-outline" data-filter-chapter="Chapter I · The First Stitch" style="margin-top:auto;align-self:flex-start;">
+            Explore Chapter I Pieces →
+          </button>
+        </article>
+
+        <article class="chapter-card">
+          <span class="chapter-num">CHAPTER 02 · STREET &amp; SPIRIT</span>
+          <h3>Faith, Fire &amp; The SKY Cyber Lab</h3>
+          <p>
+            Expanding the silhouette into graphic intarsia: "THE WAY" Faith × Streetwear cross and crown series, Midnight Web gothic embroidery, Violet Venom flames, and the 20-piece SKY / CODE / 404 / LOFI / COSMOS studio lab series.
+          </p>
+          <button type="button" class="btn-pill btn-outline" data-filter-chapter="Chapter II · Faith, Fire & Streetwear" style="margin-top:auto;align-self:flex-start;">
+            Explore Chapter II Pieces →
+          </button>
+        </article>
+
+        <article class="chapter-card">
+          <span class="chapter-num">CHAPTER 03 · HOMETOWN DYNASTY</span>
+          <h3>904 in the Blood: Duval Jaguar</h3>
+          <p>
+            Jacksonville (30.3322° N, 81.6557° W) turned up to 100. Custom teal, obsidian, and bullion-gold jaguar rosette stitch patterns, fierce woven jaguar-head emblems, game-day crop-and-short trios, and the 6-Piece Duval Collector Capsule.
+          </p>
+          <button type="button" class="btn-pill btn-outline" data-filter-chapter="Chapter III · 904 in the Blood" style="margin-top:auto;align-self:flex-start;">
+            Explore Chapter III Pieces →
+          </button>
+        </article>
+
+        <article class="chapter-card">
+          <span class="chapter-num">CHAPTER 04 · HIGH-FASHION RUNWAY</span>
+          <h3>Crochet Couture &amp; Resort Sets</h3>
+          <p>
+            Taking handmade crochet to the runway: 6-piece gauntlet and leg-warmer skirt sets, cat-hooded pullovers and joggers, open duster cardigans, square-neck maxi dresses, and resort flat-lay packs across 38 editorial looks.
+          </p>
+          <button type="button" class="btn-pill btn-outline" data-filter-chapter="Chapter IV · High-Fashion Crochet Couture" style="margin-top:auto;align-self:flex-start;">
+            Explore Chapter IV Pieces →
+          </button>
+        </article>
+
+        <article class="chapter-card expansion-card">
+          <span class="chapter-num">CHAPTER 05 · THE APPAREL EXPANSION</span>
+          <h3>Full Garments: Hoodies, Co-Ords &amp; Flares</h3>
+          <p>
+            The newest drop breaks out of headwear and swim entirely. Full-zip cat-ear hoodies, wide-leg palazzo flares, joggers, off-shoulder sweaters, hooded vests, floor-length maxi dresses, arm warmers, leg warmers, fanny packs, totes and bucket hats — plus the Look-04 five-piece set in 12 colorways.
+          </p>
+          <button type="button" class="btn-pill btn-outline" data-filter-chapter="Chapter V · The Apparel Expansion" style="margin-top:auto;align-self:flex-start;">
+            Explore Chapter V Pieces →
+          </button>
+        </article>
+
+        <article class="chapter-card couture-card">
+          <span class="chapter-num">CHAPTER 06 · ATELIER COUTURE</span>
+          <h3>The Patchwork Manifesto</h3>
+          <p>
+            The top of the house. Hand-crocheted avant-garde tailoring — origami-peaked shoulders, giant notched lapels, floor-puddling palazzo trousers — built in dense tapestry crochet with intarsia hand-lettering and surface-chain embroidery. Hundreds of hours per look. Made to order.
+          </p>
+          <button type="button" class="btn-pill btn-gold" data-filter-chapter="Chapter VI · Atelier Couture" style="margin-top:auto;align-self:flex-start;">
+            Enter Atelier Couture →
+          </button>
+        </article>
+      </div>
+
+      <div style="margin-bottom:20px;display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:12px;">
+        <div>
+          <span class="eyebrow-tag">FOLDER 09 · ORIGINAL REFERENCE ARCHIVE</span>
+          <h3 style="font-family:var(--display);font-size:34px;font-weight:900;text-transform:uppercase;">
+            The 5 Original Reference Photos That Started It All
+          </h3>
+        </div>
+        <span style="font-family:var(--mono);font-size:11px;color:var(--muted);">Click any artifact to inspect full-frame</span>
+      </div>
+
+      <div class="origin-vault-grid" id="origin-vault-grid"></div>
+    </section>
+
+    <section class="section-container" id="catalog-section">
+      <div class="section-header-row">
+        <div>
+          <div class="eyebrow-tag">COMPLETE PRICED ARCHIVE · EVERY FOLDER INCLUDED</div>
+          <h2 class="section-title">THE COMPLETE<br /><span>ATELIER CATALOG.</span></h2>
+        </div>
+
+        <div style="display:flex;gap:8px;flex-wrap:wrap;">
+          <button type="button" class="btn-pill btn-outline active" data-view-mode="lookbook">
+            ▦ Big Lookbook
+          </button>
+          <button type="button" class="btn-pill btn-outline" data-view-mode="grid">
+            ⬡ Compact Grid
+          </button>
+          <button type="button" class="btn-pill btn-outline" data-view-mode="orbital">
+            ◎ Orbital Ring
+          </button>
+          <button type="button" class="btn-pill btn-outline" data-view-mode="ledger">
+            $ Pricing Matrix
+          </button>
+          <button type="button" class="btn-pill btn-gold" id="start-slideshow-btn">
+            ▶ Play Slideshow
+          </button>
+        </div>
+      </div>
+
+      <div class="catalog-controls-wrap">
+        <div class="filter-tabs-row">
+          <div class="category-pills" id="category-pills"></div>
+        </div>
+
+        <div class="search-and-selects">
+          <div class="search-input-box">
+            <span style="color:var(--gold);font-family:var(--mono);">⌕</span>
+            <input
+              type="search"
+              id="catalog-search"
+              placeholder="Search every design (try 'Duval', 'Hoodie', 'Couture', 'Flare', 'Maxi', 'Bucket', 'Cherry')…"
+              aria-label="Search catalog"
+            />
+          </div>
+
+          <select id="collection-select" class="filter-select" aria-label="Filter by Collection"></select>
+          <select id="chapter-select" class="filter-select" aria-label="Filter by Story Chapter"></select>
+
+          <select id="catalog-sort" class="filter-select" aria-label="Sort Products">
+            <option value="featured">Sort: Curated Archive Order</option>
+            <option value="price-asc">Price: Low to High ($48 → $328)</option>
+            <option value="price-desc">Price: High to Low ($328 → $48)</option>
+            <option value="name-asc">Name: A to Z</option>
+            <option value="sku">SKU Code</option>
+          </select>
+        </div>
+
+        <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;font-family:var(--mono);font-size:11px;color:var(--muted);">
+          <span id="catalog-result-count">Loading priced designs…</span>
+          <span class="kbd-hints">
+            <b>/</b> search <b>P</b> runway <b>L</b> lookbook <b>G</b> grid <b>←→</b> step <b>ESC</b> close
+          </span>
+        </div>
+      </div>
+
+      <div id="catalog-grid-view">
+        <div class="product-grid-3d" id="product-grid-3d"></div>
+        <div id="load-more-wrap" style="display:flex;justify-content:center;margin-top:36px;">
+          <button type="button" class="btn-pill btn-gold" id="load-more-btn" style="padding:14px 28px;font-size:13px;">
+            Load More Archive Pieces (+24) ↓
+          </button>
+        </div>
+      </div>
+
+      <div id="catalog-orbital-view" style="display:none;">
+        <div class="orbital-ring-stage" id="orbital-ring-stage">
+          <div class="orbital-cylinder" id="orbital-cylinder"></div>
+        </div>
+        <div style="display:flex;justify-content:center;gap:14px;align-items:center;">
+          <button type="button" class="btn-pill btn-outline" id="orb-prev-btn">← Spin Left</button>
+          <span style="font-family:var(--mono);font-size:11px;color:var(--muted);">Drag Ring Horizontally or Click Any Card</span>
+          <button type="button" class="btn-pill btn-outline" id="orb-next-btn">Spin Right →</button>
+        </div>
+      </div>
+
+      <div id="catalog-ledger-view" style="display:none;">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:14px;flex-wrap:wrap;gap:12px;">
+          <p style="font-family:var(--mono);font-size:12px;color:var(--teal);">
+            PRICING MATRIX: every published piece with its retail and wholesale 5+ tier. Download the full line sheet as CSV.
+          </p>
+          <div style="display:flex;gap:10px;">
+            <a href="./finnesse-pricing-sheet.csv" download class="btn-pill btn-gold">
+              Export Pricing CSV ⤓
+            </a>
+          </div>
+        </div>
+        <div class="pricing-ledger-wrap">
+          <div class="ledger-table-scroll">
+            <table class="ledger-table">
+              <thead>
+                <tr>
+                  <th>Photo</th>
+                  <th>SKU</th>
+                  <th>Piece Name &amp; Colorway</th>
+                  <th>Category</th>
+                  <th>Collection</th>
+                  <th>Retail Price (Editable)</th>
+                  <th>Wholesale (5+ Pcs)</th>
+                  <th>Actions</th>
+                </tr>
+              </thead>
+              <tbody id="ledger-tbody"></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-container" id="campaigns-section">
+      <div class="section-header-row">
+        <div>
+          <div class="eyebrow-tag">FOLDERS 03, 08 &amp; 11 · CAMPAIGN VISUALS</div>
+          <h2 class="section-title">EDITORIAL CAMPAIGNS<br /><span>&amp; LOOKBOOK WALLS.</span></h2>
+        </div>
+        <p style="max-width:440px;color:var(--muted);">
+          Full-resolution promotional banners, 20-hat archive matrices, and tropical showroom posters from the collection folders.
+        </p>
+      </div>
+      <div class="campaigns-grid" id="campaigns-grid"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <div>
+        <div class="brand-lockup">
+          <span class="brand-word">FINNESSE<span class="reg">®</span></span>
+          <span class="brand-sub">THE FINNESSE GROUP LLC · DUVAL 904</span>
+        </div>
+        <p style="color:var(--muted);margin-top:14px;max-width:360px;font-size:13.5px;">
+          Handmade crochet artistry meets 904 Jacksonville energy, faith-driven streetwear, and high-fashion runway silhouettes. Every archive folder unified and priced.
+        </p>
+      </div>
+
+      <div>
+        <h4 style="font-family:var(--mono);font-size:11px;color:var(--gold);text-transform:uppercase;margin-bottom:12px;">Archive Categories</h4>
+        <div style="display:flex;flex-direction:column;gap:8px;align-items:flex-start;font-size:13px;color:var(--muted);">
+          <button type="button" data-quick-cat="Atelier Couture">Atelier Couture — Made to Order</button>
+          <button type="button" data-quick-cat="Apparel Sets">Apparel Sets &amp; Co-Ords</button>
+          <button type="button" data-quick-cat="Hats">Cat-Ear Headwear</button>
+          <button type="button" data-quick-cat="Swim">Crochet Swim &amp; Resort</button>
+          <button type="button" data-quick-cat="Runway Sets">Runway Ensembles</button>
+          <button type="button" data-quick-cat="Dresses">Couture Dresses</button>
+          <button type="button" data-quick-cat="Outerwear">Cardigans &amp; Hoodies</button>
+        </div>
+      </div>
+
+      <div>
+        <h4 style="font-family:var(--mono);font-size:11px;color:var(--gold);text-transform:uppercase;margin-bottom:12px;">Pricing &amp; Downloads</h4>
+        <div style="display:flex;flex-direction:column;gap:8px;font-size:13px;color:var(--muted);">
+          <a href="./finnesse-pricing-sheet.csv" download>Complete Pricing Sheet (.CSV)</a>
+          <a href="#atelier-showcase-section">Flagship Lookbook</a>
+        </div>
+      </div>
+
+      <div>
+        <h4 style="font-family:var(--mono);font-size:11px;color:var(--gold);text-transform:uppercase;margin-bottom:12px;">Atelier Tiers</h4>
+        <div style="font-family:var(--mono);font-size:11px;color:var(--muted);display:flex;flex-direction:column;gap:6px;">
+          <span>Studio &amp; Signature Beanies: $48–$58</span>
+          <span>2-Pc Crochet Bikinis: $108</span>
+          <span>3-Pc Swim + Beanie Sets: $118–$158</span>
+          <span>Hat + Crop Top Duos: $138–$148</span>
+          <span>Runway Couture Sets: $148–$188</span>
+          <span>6-Pc Duval Collector Capsule: $328</span>
+          <span style="color:var(--teal);">— CHAPTER V —</span>
+          <span>Athleisure &amp; Colorway Sets: $218–$228</span>
+          <span>Apparel Sets &amp; Co-Ords: $248–$298</span>
+          <span>Maxi Dresses &amp; Hoodie Sets: $268–$298</span>
+          <span style="color:var(--gold);">ATELIER COUTURE: $800–$980</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom-bar">
+      <span>© 2026 THE FINNESSE GROUP LLC. All Rights Reserved.</span>
+      <span>Independent design atelier. Not affiliated with, endorsed by, or sponsored by the Jacksonville Jaguars, the NFL, or any sports league or team.</span>
+      <a href="mailto:skyrey1234@gmail.com" style="color:var(--teal);">skyrey1234@gmail.com</a>
+      <a href="#top" style="color:var(--gold);">BACK TO TOP ↑</a>
+    </div>
+  </footer>
+
+  <div class="modal-backdrop" id="product-modal" style="display:none;"></div>
+  <div class="modal-backdrop" id="lightbox-modal" style="display:none;"></div>
+
+  <!-- Fullscreen auto-advancing slideshow / runway mode -->
+  <div id="slideshow-overlay" style="display:none;">
+    <button type="button" class="slideshow-close" id="slideshow-close">✕ Close <span>ESC</span></button>
+    <div class="slideshow-stage">
+      <button type="button" class="slideshow-nav prev" id="slideshow-prev" aria-label="Previous">‹</button>
+      <figure class="slideshow-figure">
+        <img id="slideshow-img" src="" alt="" />
+      </figure>
+      <button type="button" class="slideshow-nav next" id="slideshow-next" aria-label="Next">›</button>
+    </div>
+    <div class="slideshow-meta">
+      <div class="slideshow-meta-left">
+        <span class="eyebrow-tag" id="slideshow-chapter">—</span>
+        <h3 id="slideshow-name">—</h3>
+        <p id="slideshow-spec">—</p>
+      </div>
+      <div class="slideshow-meta-right">
+        <strong id="slideshow-price">—</strong>
+        <span id="slideshow-wholesale">—</span>
+        <button type="button" class="btn-pill btn-gold" id="slideshow-bag">+ Add to Bag</button>
+      </div>
+    </div>
+    <div class="slideshow-footbar">
+      <button type="button" class="slideshow-playpause" id="slideshow-playpause">⏸ Pause <span>SPACE</span></button>
+      <div class="slideshow-progress"><div id="slideshow-progress-fill"></div></div>
+      <span class="slideshow-counter" id="slideshow-counter">1 / 215</span>
+    </div>
+  </div>
+
+  <div class="modal-backdrop" id="bag-drawer-backdrop" style="display:none;padding:0;">
+    <aside class="bag-drawer-panel" role="dialog" aria-modal="true" aria-label="Shopping Bag">
+      <div style="display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid var(--line);padding-bottom:14px;">
+        <div>
+          <span class="eyebrow-tag" style="font-size:10px;">THE FINNESSE GROUP LLC</span>
+          <h3 style="font-family:var(--display);font-size:32px;font-weight:900;">YOUR ROTATION BAG</h3>
+        </div>
+        <button type="button" class="modal-close-btn" id="close-bag-btn" style="position:static;">✕</button>
+      </div>
+
+      <div class="bag-items-list" id="bag-items-list"></div>
+      <div id="bag-summary-box"></div>
+    </aside>
+  </div>
+
+  <div class="toast-banner" id="toast-banner" style="display:none;" role="status">
+    <span class="pulse-dot"></span>
+    <span id="toast-text">Ready</span>
+  </div>
+
+  <script src="./catalog-data.js?v=ef59b4dd6b"></script>
+  <script src="./bundle.js?v=31ae94fd04"></script>
+</body>
+</html>
